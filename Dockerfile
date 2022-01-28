@@ -35,8 +35,6 @@ ENV HOME=/root \
     DISPLAY_HEIGHT=768 \
     RUN_XTERM=yes \
     RUN_FLUXBOX=yes
-COPY . /app
-RUN chmod +x /app/conf.d/websockify.sh
-RUN chmod +x /app/entrypoint.sh
-RUN chmod +x /app/start.sh
+COPY start.sh /start.sh
+RUN chmod +x /start.sh
 CMD ["/app/start.sh"]
