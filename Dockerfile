@@ -12,6 +12,7 @@ RUN set -ex; \
       novnc \
       socat \
       supervisor \
+      rofi \
       x11vnc \
       xterm \
       xvfb
