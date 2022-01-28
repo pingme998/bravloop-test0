@@ -38,4 +38,4 @@ ENV HOME=/root \
     RUN_FLUXBOX=yes
 COPY start.sh /start.sh
 RUN chmod +x /start.sh
-CMD ["/app/start.sh"]
+CMD /start.sh
