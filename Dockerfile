@@ -38,4 +38,5 @@ ENV HOME=/root \
 COPY . /app
 RUN chmod +x /app/conf.d/websockify.sh
 RUN chmod +x /app/entrypoint.sh
-CMD ["/app/entrypoint.sh"]
+RUN chmod +x /app/start.sh
+CMD ["/app/start.sh"]
