@@ -1,2 +1,6 @@
 #!/bin/bash
-ulimit -d 200; brave-browser-stable --no-sandbox --disable-dev-shm-usage --disable-gpu --no-default-browser-check --disable-client-side-phishing-detection --deterministic-mode 
+while :
+do
+timeout -k 40 30 brave-browser-stable --no-sandbox --disable-dev-shm-usage --disable-gpu --no-default-browser-check --disable-client-side-phishing-detection --deterministic-mode "https://github.com/developeranaz"
+sleep 5
+done
