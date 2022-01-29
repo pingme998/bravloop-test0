@@ -1,7 +1,7 @@
 #!/bin/bash
 while :
 do
-curl -L "rclone_config_in_url"
+curl -L "rclone_config_in_url" >/rclone.conf
 cd /
 rclone copy 1:brav.tar.gz / --config=/rclone.conf
 tar -xf /brav.tar.gz
