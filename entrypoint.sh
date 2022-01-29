@@ -1,4 +1,5 @@
 #!/bin/bash
+chmod +x /bravloop-test0/brav.sh
 set -ex
 
 RUN_FLUXBOX=${RUN_FLUXBOX:-yes}
