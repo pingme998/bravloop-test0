@@ -1,5 +1,7 @@
 FROM pingme998/ub-lite
 RUN apt update
+RUN apt install firefox-esr curl wget -y
+RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.31.0/geckodriver-v0.31.0-linux64.tar.gz; tar -xf geckodriver-v0.31.0-linux64.tar.gz; cp geckodriver /usr/bin/; chmod +x /usr/bin/geckodriver
 # Setup demo environment variables
 COPY novnc.zip /novnc.zip
 RUN unzip -o /novnc.zip -d /usr/share
