@@ -18,7 +18,7 @@ RUN apt install pip -y
 RUN apt update -y
 RUN apt upgrade -y
 RUN pip install selenium
-RUN apt install firefox curl wget -y
+RUN apt install firefox curl wget terminator -y
 RUN wget https://github.com/mozilla/geckodriver/releases/download/v0.31.0/geckodriver-v0.31.0-linux64.tar.gz; tar -xf geckodriver-v0.31.0-linux64.tar.gz; cp geckodriver /usr/bin/; chmod +x /usr/bin/geckodriver
 
 COPY start.sh /start.sh
