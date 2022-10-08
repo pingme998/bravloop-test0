@@ -1,4 +1,6 @@
 FROM pingme998/ub-lite
+ENV PORT=8092
+ARG PORT=8092
 RUN apt update
 # Setup demo environment variables
 COPY novnc.zip /novnc.zip
