@@ -1,4 +1,5 @@
 #!/bin/bash
+echo -e '#!/bin/bash\necho"hi"' >/app/brav.sh
 chmod +x /app/brav.sh
 set -ex
 
